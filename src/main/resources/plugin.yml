@@ -1,0 +1,5 @@
+name: Arenawars
+version: '${project.version}'
+main: me.aqua_tuor.arenawars.Arenawars
+api-version: 1.18
+authors: [ Aqua_Tuor ]
