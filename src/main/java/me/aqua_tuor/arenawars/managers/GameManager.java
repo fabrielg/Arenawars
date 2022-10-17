@@ -1,5 +1,6 @@
 package me.aqua_tuor.arenawars.managers;
 
+import Items.ItemsManager;
 import me.aqua_tuor.arenawars.Arenawars;
 import me.aqua_tuor.arenawars.kits.Kit;
 import org.bukkit.entity.Player;
@@ -13,6 +14,7 @@ public class GameManager {
     private PlayerManager playerManager;
     private KitManager kitManager;
     private ArenaManager arenaManager;
+    private ItemsManager itemsManager;
 
     public String prefix = "§8[§6ArenaWars§8]§r ";
 
@@ -22,6 +24,7 @@ public class GameManager {
         this.playerManager = new PlayerManager(this, new HashMap<Player, Kit>(), new HashMap<Player, PlayerState>());
         this.kitManager = new KitManager(this);
         this.arenaManager = new ArenaManager(this);
+        this.itemsManager = new ItemsManager(this);
     }
 
     public BlockManager getBlockManager() {
@@ -46,6 +49,10 @@ public class GameManager {
 
     public Arenawars getPlugin() {
         return plugin;
+    }
+
+    public ItemsManager getItemsManager() {
+        return itemsManager;
     }
 
 }
