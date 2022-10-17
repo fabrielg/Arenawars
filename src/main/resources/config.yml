@@ -1,0 +1,39 @@
+kits:
+  Default:
+    displayname: "§cBarbarian"
+    icon: "DIAMOND_SWORD"
+    items:
+      - "DIAMOND_SWORD,1,0"
+    armor:
+      helmet: "DIAMOND_HELMET"
+      chestplate: "IRON_CHESTPLATE"
+      leggings: "IRON_LEGGINGS"
+      boots: "IRON_BOOTS"
+
+    # The time is in seconds and the amplifier is the level of the potion effect
+    # Example : "SPEED,10,2" will give the player speed 2 for 10 seconds
+    # Set time to -1 to make it permanent
+    effects: []
+
+  Archer:
+    displayname: "§eArcher"
+    icon: "BOW"
+    items:
+      - "BOW,1,1"
+      - "ARROW,64,2"
+      - "STONE_SWORD,1,0"
+    armor:
+      helmet: "LEATHER_HELMET"
+      chestplate: "IRON_CHESTPLATE"
+      leggings: "LEATHER_LEGGINGS"
+      boots: "IRON_BOOTS"
+    effects:
+      - "SPEED,-1,1"
+
+arena:
+  name: "Arena"
+  world: "world"
+  lobby: "-4.5,206.5,9.5,-135.0,0.0"
+  region:
+      min: "-824,0,-520"
+      max: "-593,64,-716"

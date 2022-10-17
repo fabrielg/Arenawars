@@ -3,3 +3,8 @@ version: '${project.version}'
 main: me.aqua_tuor.arenawars.Arenawars
 api-version: 1.18
 authors: [ Aqua_Tuor ]
+commands:
+  kits:
+    description: "Open the kit selector"
+    usage: "/kits"
+    aliases: [ kit ]
