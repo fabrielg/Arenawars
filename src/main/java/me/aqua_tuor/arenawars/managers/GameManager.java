@@ -1,6 +1,6 @@
 package me.aqua_tuor.arenawars.managers;
 
-import Items.ItemsManager;
+import me.aqua_tuor.arenawars.Items.ItemsManager;
 import me.aqua_tuor.arenawars.Arenawars;
 import me.aqua_tuor.arenawars.kits.Kit;
 import org.bukkit.entity.Player;

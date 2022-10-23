@@ -8,3 +8,7 @@ commands:
     description: "Open the kit selector"
     usage: "/kits"
     aliases: [ kit ]
+  items:
+    description: "Open the item selector"
+    usage: "/items"
+    aliases: [ item ]

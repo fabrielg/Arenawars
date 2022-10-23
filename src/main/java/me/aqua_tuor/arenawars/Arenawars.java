@@ -1,5 +1,6 @@
 package me.aqua_tuor.arenawars;
 
+import me.aqua_tuor.arenawars.Items.ItemsCommand;
 import me.aqua_tuor.arenawars.commands.KitsCommand;
 import me.aqua_tuor.arenawars.listeners.*;
 import me.aqua_tuor.arenawars.managers.GameManager;
@@ -32,6 +33,11 @@ public final class Arenawars extends JavaPlugin {
 
         // Command Kits
         Objects.requireNonNull(getCommand("kits")).setExecutor(new KitsCommand(gameManager));
+
+        // Command Items
+        Objects.requireNonNull(getCommand("items")).setExecutor(new ItemsCommand(gameManager));
+
+
 
     }
 
